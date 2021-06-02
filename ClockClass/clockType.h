@@ -36,7 +36,7 @@ public:
 
   int timeRemaining();
 
-  void timeDifference(clockType &otherClock);
+  int timeDifference(clockType &otherClock);
 
   clockType(int hours, int minutes, int seconds);
 
