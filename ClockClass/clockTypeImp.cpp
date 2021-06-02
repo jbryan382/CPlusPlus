@@ -141,7 +141,7 @@ int clockType::timeRemaining()
   return 86400 - timeElapsed();
 }
 
-void clockType::timeDifference(clockType &otherClock)
+int clockType::timeDifference(clockType &otherClock)
 {
 
   // initializing differences in seconds, mins, and hours
@@ -172,4 +172,6 @@ void clockType::timeDifference(clockType &otherClock)
   differenceClock.setTime(hDiff, mDiff, sDiff);
 
   differenceClock.printTime();
+  
+  return timeDiff;
 }
